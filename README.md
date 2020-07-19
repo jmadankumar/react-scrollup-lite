@@ -1,6 +1,6 @@
 # react-scrollup-lite
 
-> React wrapper component for scroll up
+> React wrapper component to scroll up/top when user scrolls the page
 
 [![NPM](https://img.shields.io/npm/v/react-scrollup-lite.svg)](https://www.npmjs.com/package/react-scrollup-lite) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -21,7 +21,15 @@ import 'react-scrollup-lite/dist/index.css';
 class Example extends Component {
     render() {
         return (
-            <ScrollUp startPosition={0} showAtPosition={10} position='right'>
+            <ScrollUp
+                startPosition={0}
+                showAtPosition={10}
+                position='right'
+                className='scroll-up'
+                style={{
+                    right: '20px',
+                }}
+            >
                 <button>Scroll up</button>
             </ScrollUp>
         );
@@ -31,11 +39,11 @@ class Example extends Component {
 
 ## Proptypes
 
-|Props|types|description|
-|-----|------|----------|
-|startPosition|number| start position to scroll up|
-|showAtPosition|number| At what position component children should be visible|
-|position|string|left or right|
+| Props          | Type   | Description                                                                   |
+| -------------- | ------ | ----------------------------------------------------------------------------- |
+| startPosition  | number | start position to scroll up                                                   |
+| showAtPosition | number | when scrolling the page at what position component children should be visible |
+| position       | string | left or right (where to show the children component)                          |
 
 ## License
 

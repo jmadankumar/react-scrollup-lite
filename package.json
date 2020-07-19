@@ -1,6 +1,6 @@
 {
     "name": "react-scrollup-lite",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "description": "React wrapper  component for scroll up",
     "author": "Madan Kumar <kumarmadan.j@gmail.com>",
     "license": "MIT",
@@ -50,5 +50,11 @@
     },
     "files": [
         "dist"
+    ],
+    "keywords": [
+        "react",
+        "scrollup",
+        "scroll to top",
+        "wrapper"
     ]
 }

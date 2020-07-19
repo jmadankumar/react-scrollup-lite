@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import ScrollUp from './ScrollUp';
 
-describe('ExampleComponent', () => {
-  it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
-  })
-})
+describe('ScrollUp', () => {
+    it('is truthy', () => {
+        expect(ScrollUp).toBeTruthy();
+    });
+});

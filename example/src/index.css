@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
@@ -21,9 +24,23 @@ body {
     background-color: red;
     height: 400px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .yellow {
     background-color: yellow;
     height: 400px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll-up > button{
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
