@@ -16,7 +16,6 @@ npm install --save react-scrollup-lite
 import React, { Component } from 'react';
 
 import ScrollUp from 'react-scrollup-lite';
-import 'react-scrollup-lite/dist/index.css';
 
 class Example extends Component {
     render() {
