@@ -38,11 +38,11 @@ class Example extends Component {
 
 ## Proptypes
 
-| Props          | Type   | Description                                                                   |
-| -------------- | ------ | ----------------------------------------------------------------------------- |
-| startPosition  | number | start position to scroll up                                                   |
-| showAtPosition | number | when scrolling the page at what position component children should be visible |
-| position       | string | left or right (where to show the children component)                          |
+| Props               | Type   | Description                                                                   |
+| ------------------- | ------ | ----------------------------------------------------------------------------- |
+| startPosition       | number | start position to scroll up                                                   |
+| showAtPosition      | number | when scrolling the page at what position component children should be visible |
+| position (optional) | string | left or right (where to show the children component) (default - right)        |
 
 ## License
 
