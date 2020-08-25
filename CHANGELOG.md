@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.3] - 2020-08-25
+
+### Changed
+
+-   Code Refactor
+
 ## [0.2.2] - 2020-08-20
 
 ### Changed

@@ -10,16 +10,21 @@ const ScrollUp = ({
     style,
 }) => {
     const [visible, setVisible] = useState(false);
+    const styles = {
+        display: visible ? 'block' : 'none',
+        position: 'fixed',
+        bottom: '50px',
+        zIndex: 999,
+        ...(position === 'left' ? { left: '50px' } : { right: '50px' }),
+        ...style,
+    };
+
     const handleClick = () => {
         window.scrollTo(0, startPosition);
     };
 
-    const scrollListener = (event) => {
-        if (window.pageYOffset > showAtPosition) {
-            setVisible(true);
-        } else {
-            setVisible(false);
-        }
+    const scrollListener = () => {
+        setVisible(window.pageYOffset > showAtPosition);
     };
 
     useEffect(() => {
@@ -29,14 +34,6 @@ const ScrollUp = ({
         };
     }, []);
 
-    const styles = {
-        display: visible ? 'block' : 'none',
-        position: 'fixed',
-        bottom: '50px',
-        zIndex: 999,
-        ...(position === 'left' ? { left: '50px' } : { right: '50px' }),
-        ...style,
-    };
     return (
         <div onClick={handleClick} style={styles} className={className}>
             {children}
