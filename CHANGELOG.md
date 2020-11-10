@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.0] - 2020-11-10
+
+### Changed
+
+- Bump react and react-dom version to 17.0.1
+- Bump react-script version to 4.0.0
+- Bump versions of eslint, eslint-config-standard, eslint-config-standard-react, eslint-plugin-standard 
+
 ## [0.2.3] - 2020-08-25
 
 ### Changed
